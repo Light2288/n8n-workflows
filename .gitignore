@@ -1,0 +1,35 @@
+# Local secrets and keys.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Instance state, credential exports, and execution history.
+.n8n/
+data/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+credentials/
+credentials*.json
+**/*credentials*.json
+executions/
+executions*.json
+**/*executions*.json
+
+# Unreviewed exports, private samples, and backups.
+private/
+private-samples/
+scratch/
+workflows/private/
+workflows/scratch/
+backups/
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.bak
+.superpowers/
+.DS_Store
