@@ -15,10 +15,10 @@ Group future examples under `workflows/<descriptive-name>/`, with a `workflow.js
 ## Use an example
 
 1. Start the existing [local lab](https://github.com/Light2288/n8n-lab/tree/main#daily-operation) and open [the editor](http://localhost:5678).
-2. Clone this repository's implementation branch while the initial work is unmerged:
+2. Clone this repository’s main branch:
 
    ```sh
-   git clone --branch chore/workflow-repositories https://github.com/Light2288/n8n-workflows.git
+   git clone --branch main https://github.com/Light2288/n8n-workflows.git
    cd n8n-workflows
    ```
 
@@ -26,8 +26,6 @@ Group future examples under `workflows/<descriptive-name>/`, with a `workflow.js
 4. Create a **new workflow**, open its actions menu, and select **Import → From file**. Select the example's `workflow.json`; menu labels can vary by n8n version.
 5. Give the imported copy a recognizable name and configure any required local credentials. The smoke test needs none.
 6. Execute manually and compare its result with the documented output. Review schedules and destinations before publishing any future workflow. Importing a file is separate from publishing or enabling triggers.
-
-The explicit branch above contains the reviewed examples before a separate merge into main. After that merge, main can become the normal clone target.
 
 ## Export, review, and commit
 
